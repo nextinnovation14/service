@@ -144,6 +144,7 @@ body {
     .side-menus {
         display: flex;
         font-family: fantasy;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .side-menu {
         display: flex;
