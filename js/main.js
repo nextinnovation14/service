@@ -18,23 +18,21 @@
     mainTitle.animate([{ opacity: '0' }, { opacity: '0.1' }], 1500);
     // フェードイン
 
-    // IntersectionObserver
-    // const target = document.getElementById('what-we-do-title');
+    //ジャンプ
+    const homeBtn = document.getElementById('home-btn');
+    homeBtn.addEventListener('click', () => {
+        scrollTo(0, 0);
+    });
 
-    // const options = {
-    //     threshold: [0.3, 0.7]
-    // };
+    const whatWeDoBtn = document.getElementById('what-we-do-btn');
+    whatWeDoBtn.addEventListener('click', () => {
+        scrollTo(0, 800);
+    })
 
-    // const observer = new IntersectionObserver(scrollEffect, options);
-    // observer.observe(target);
-
-    // function scrollEffect() {
-    //     const tl = new TimelineMax({ delay: 0.5 });
-    //     tl.fromTo(target, 0.5, { y: '100', opacity: 0 }, { y: 0, opacity: 1 })
-    // };
-    // scrollEffsect();
-
-
-    // IntersectionObserver
+    //矢印
+    const arrow = document.getElementById('toTop');
+    arrow.addEventListener('click', () => {
+        scrollTo(0, 0);
+    });
 
 }
