@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(211, 211, 211);
     font-family: fantasy;
+    height: 100vh;
+
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 @media (min-width:320px) and (max-width: 900px) {
     body {
@@ -67,24 +72,33 @@ body {
     font-weight: bold;
     text-align: center;
 }
+.menus a {
+    text-decoration: none;
+    color: rgb(125, 125, 125);
+    font-size: 20px;
+}
+.menus a:hover {
+    color: black;
+}
 .menus p {
     margin-top: 10px;
     text-align: center;
     padding-right: 100px;
 }
-/* .menus a:hover {
-    cursor: pointer;
-    color: black;
-    transition: all 0.8s;
-    font-weight: bold;
-} */
-.menus:hover {
-    /* transform: scaleY(1.2); */
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
 .menus p {
     font-size: 10px;
+}
+.arrow {
+    position: fixed;
+    right: 100px;
+    top: 600px;
+    font-size: 40px;
+    color: rgb(121, 121, 121);
+}
+.arrow:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    color: rgb(49, 49, 49);
 }
 /* メニュー */
 
@@ -186,6 +200,19 @@ body {
     }
     /* サイドバー */
     /* メニュー(ハンバーガー) */
+
+    .arrow {
+        position: fixed;
+        right: 30px;
+        top: 700px;
+        font-size: 30px;
+        color: rgb(121, 121, 121);
+    }
+    .arrow:hover {
+        transform: translateY(-10px);
+        transition: 0.5s;
+        color: rgb(49, 49, 49);
+    }
 }
 /* レスポンシブ */
 /* header-container */
@@ -255,7 +282,7 @@ body {
 /* what we do */
 .what-we-do {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 200px;
 }
 .what-we-do-title {
     color: rgb(177, 177, 177);
@@ -373,7 +400,8 @@ body {
 /* member */
 .members-container {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 100px;
+    padding-top: 200px;
     color: rgb(97, 97, 97);
 }
 .member-maintitle {
@@ -449,6 +477,7 @@ body {
 .contact-container {
     text-align: center;
     margin-top: 250px;
+    padding-top: 200px;
     color: rgb(177, 177, 177);
 }
 .contact-maintitle {
