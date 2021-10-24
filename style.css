@@ -219,7 +219,7 @@ body {
         width: 40%;
     }
     .contacts p {
-        color: rgb(97, 97, 97);
+        color: rgba(97, 97, 97);
         font-family: 'Times New Roman', Times, serif;
     }
 }
