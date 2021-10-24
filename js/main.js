@@ -30,7 +30,7 @@
     });
 
     //コンタクト
-    const contact = document.getElementById('contact');
+    const contact = document.getElementById('contact-place');
     contact.addEventListener('click', () => {
         scrollTo(0, 10000);
     })
