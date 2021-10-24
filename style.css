@@ -220,7 +220,7 @@ body {
     }
     .contacts p {
         color: rgb(97, 97, 97);
-        font-family: fantasy;
+        font-family: 'Times New Roman', Times, serif;
     }
 }
 /* レスポンシブ */
