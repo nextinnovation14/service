@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 body {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(202, 202, 202);
     font-family: fantasy;
     height: 100vh;
     /* overflow-y: scroll; 
@@ -14,6 +14,7 @@ body {
 
 /* header-container */
 .header-container {
+    background-color: rgb(221, 221, 221);
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,7 @@ body {
     border-bottom: rgb(54, 54, 54) 1px solid;
     box-shadow: rgb(0, 0, 0) 1px 1px;
     z-index: 50;
+    opacity: 0.8;
 }
 
 /* ロゴ */
@@ -294,7 +296,7 @@ body {
     padding-top: 200px;
 }
 .what-we-do-title {
-    color: rgb(177, 177, 177);
+    color: black;
 }
 .what-we-do-maintitle {
     font-size: 50px;
@@ -398,6 +400,7 @@ body {
     .service {
         display: block;
         justify-content: center;
+        color: black;
     }
     .service img {
         display: none;
@@ -421,19 +424,19 @@ body {
         background-image: url(img/toa-heftiba-6bKpHAun4d8-unsplash.jpg);
         background-size: cover;
         background-color: rgba(179, 179, 179, 0.6);
-        background-blend-mode:lighten;
+        background-blend-mode:saturation;
     }
     .seminor {
         background-image: url(img/austin-distel-rxpThOwuVgE-unsplash.jpg);
         background-size: cover;
         background-color: rgba(179, 179, 179, 0.6);
-        background-blend-mode:lighten;
+        background-blend-mode:color-dodge;;
     }
     .offline {
         background-image: url(img/S__39575761.jpg);
         background-size: cover;
         background-color: rgba(179, 179, 179, 0.6);
-        background-blend-mode:lighten;
+        background-blend-mode:color-dodge;;
     }
     .message {
         margin-top: 80px;
@@ -518,10 +521,12 @@ body {
 .member-maintitle {
     font-size: 50px;
     letter-spacing: 3px;
+    color: black;
 }
 .member-subtitle {
     font-size: 20px;
     letter-spacing: 3px;
+    color: black;
 }
 .member-intro {
     display: flex;
