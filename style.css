@@ -322,8 +322,8 @@ body {
     font-size: 30px;
 }
 .content p {
-    margin-top: 50px;
-    font-size: 20px;
+    margin: 50px 50px;
+    font-size: 18px;
 }
 .message {
     margin-top: 100px;
@@ -409,16 +409,17 @@ body {
         width: 100%;
         border: 1px solid black;
         padding-bottom: 20px;
-        margin-top: 30px;
+        padding: 40px;
     }
     .content h2 {
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 25px;
     }
     .content p {
-        margin-top: 10px;
+        margin: 10px;
         font-size: 15px;
         line-height: 20px;
+        font-weight: bold;
     }
     .leader {
         background-image: url(img/toa-heftiba-6bKpHAun4d8-unsplash.jpg);
@@ -446,8 +447,11 @@ body {
     .message h1 {
         font-size: 25px;
     }
+    .message h2 {
+        font-size: 15px;
+    }
     .message p {
-        margin: 0 20px;
+        margin: 20px;
         line-height: 25px;
         margin-top: 10px;
         font-size: 15px;
@@ -539,6 +543,13 @@ body {
     border-radius: 20px;
     box-shadow: 3px 4px 3px black;
     width: 30%;
+    padding: 10px 15px;
+}
+.member-detail h2 {
+    letter-spacing: 3px;
+    color: black;
+    font-size: 30px;
+    padding: 30px 10px 20px;
 }
 .member-detail p {
     padding: 20px 10px;
@@ -579,8 +590,12 @@ body {
         border: 2px solid rgb(233, 233, 233);
         border-radius: 20px;
         box-shadow: 3px 4px 3px black;
-        width: 70%;
+        width: 90%;
         margin-top: 40px;
+    }
+    .member-detail img {
+        width: 100%;
+        height: 400px;
     }
     .member-detail p {
         padding: 10px 5px;
