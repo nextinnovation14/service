@@ -74,6 +74,7 @@ header {
         background-color: none;
         opacity: 0.8;
         width: 100%;
+        z-index: 15;
     }
     .header-detail {
         float: left;
@@ -211,3 +212,51 @@ header {
     }
 }
 /* サービス　スマホ  */
+
+/* セミナー */
+.seminars {
+    margin-top: 120px;
+}
+.seminars-container h1 {
+    margin-left: 30px;
+}
+.seminars-content {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.seminars-detail {
+    margin-left: 30px;
+}
+.seminars-img {
+    width: 100%;
+}
+.seminars-img img {
+    width: 100%;
+}
+/* セミナー */
+/* セミナー　スマホ */
+@media (min-width:320px) and (max-width: 900px) {
+    .seminars {
+        margin-top: 120px;
+    }
+    .seminars-container h1 {
+        margin-left: 20px;
+    }
+    .seminars-content {
+        display: block;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .seminars-detail {
+        margin: 10px;
+    }
+    .seminars-img {
+        width: 100%;
+    }
+    .seminars-img img {
+        width: 100%;
+        opacity: 0.7;
+    }
+}
+/* セミナー　スマホ */
