@@ -25,18 +25,17 @@ header {
 }
 .header-detail {
     float: left;
-    width: 50%;
-    margin: 25% 10%;
+    width: 30%;
+    margin: 250px 100px;
 }
 .header-detail article {
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(20, 20, 20);
+    color: white;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 30px;
 }
 .header-logo img {
     margin-left: 80px;
-}
-.header-menu {
 }
 .header-menu ul {
     display: flex;
@@ -74,15 +73,12 @@ header {
         min-height: 70px;
         background-color: none;
         opacity: 0.8;
-        /* display: flex;
-        justify-content: center; */
         width: 100%;
-        /* position: fixed; */
     }
     .header-detail {
         float: left;
         width: 70%;
-        margin: 30% 5%;
+        margin: 150px 50px;
     }
     .header-detail article {
         background-color: rgb(189, 189, 189);
@@ -108,3 +104,58 @@ header {
 
 }
 /* ヘッダー　スマホ */
+
+/* コンセプト */
+.concept {
+    margin-top: 100px;
+}
+.concept-content {
+    display: flex;
+    align-items: center;
+}
+.concept-detail {
+    width: 30%;
+}
+.concept-detail h1, p {
+    margin-top: 40px;
+}
+.concept-img {
+    width: 60%;
+}
+.concept-img img {
+    width: 100%;
+}
+
+/* コンセプト */
+/* コンセプト　スマホ */
+@media (min-width:320px) and (max-width: 900px) {
+
+    .concept {
+        margin-top: 70px;
+    }
+    .concept-content {
+        display: block;
+        align-items: center;
+    }
+    .concept-detail {
+        width: 90%;
+    }
+    .concept-detail h1, p {
+        margin-top: 10px;
+    }
+    .concept-detail p {
+        position: relative;
+        top: 50px;
+        font-weight: bold;
+    }
+    .concept-img {
+        width: 100%;
+        position: relative;
+        top: -100px;
+        opacity: 0.5;
+    }
+    .concept-img img {
+        width: 100%;
+    }
+}
+/* コンセプト　スマホ */
