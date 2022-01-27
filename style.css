@@ -447,3 +447,67 @@ header {
     }
 }
 /* ニュース　スマホ */
+
+/* メンバー */
+.members {
+    width: 100%;
+}
+.members-container {
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.members-detail {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 50px;
+}
+.memebers-img {
+    width: 0%;
+}
+.members-img img {
+    width: 70%;
+}
+.members-intro {
+    width: 100%;
+    font-size: 20px;
+}
+.ryota {
+    margin-left: 150px;
+}
+/* メンバー */
+/* メンバー　スマホ */
+@media (min-width:320px) and (max-width: 900px) {
+    .members {
+        width: 100%;
+    }
+    .members-container {
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    
+    .members-detail {
+        display: block;
+        align-items: center;
+        justify-content: right;
+        margin: 50px 0px;
+    }
+    .memebers-img {
+        width: 0%;
+    }
+    .members-img img {
+        width: 100%;
+    }
+    .members-intro {
+        width: 100%;
+        font-size: 20px;
+    }
+    .members-intro h2 ,h5 {
+        text-align: center;
+    }
+    .ryota {
+        margin-left: 0px;
+    }
+}
+/* メンバー　スマホ */
