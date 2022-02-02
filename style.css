@@ -7,7 +7,7 @@ body {
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    background-color: rgb(176, 225, 245);
+    background-color: rgb(210, 236, 247);
 }
 
 /* ヘッダー */
@@ -60,6 +60,9 @@ header {
     list-style: none;
     justify-content: left;
 }
+.header-img {
+    display: none;
+}
 .hamburger {
     display: none;
 }
@@ -68,9 +71,12 @@ header {
 @media (min-width:320px) and (max-width: 900px) {
     header {
         min-height: 40vh;
-        background-image: url(img/marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+        /* background-image: url(img/marvin-meyer-SYTO3xs06fU-unsplash.jpg); */
         background-size: cover;
         opacity: 0.9;
+    }
+    video {
+        display: none;
     }
     .header-container {
         width: 100%; 
@@ -115,6 +121,13 @@ header {
     .hamburger-contact li {
         list-style: none;
     }
+    .header-img {
+        display: block;
+    }
+    .header-img img{
+        margin-top: 70px;
+        width: 100%;
+    }
 
 }
 /* ヘッダー　スマホ */
@@ -146,9 +159,10 @@ header {
 @media (min-width:320px) and (max-width: 900px) {
 
     .concept {
-        margin-top: 70px;
+        margin-top: 0px;
     }
     .concept-content {
+        padding-top: 30px;
         display: block;
         align-items: center;
     }
@@ -157,17 +171,24 @@ header {
     }
     .concept-detail h1, p {
         margin-top: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .concept-detail h1 {
+        font-size: 25px;
     }
     .concept-detail p {
         position: relative;
-        top: 50px;
+        top: 150px;
         font-weight: bold;
+        background-color: white;
+        opacity: 2;
+        z-index: 10;
     }
     .concept-img {
         width: 100%;
         position: relative;
-        top: -100px;
-        opacity: 0.5;
+        top: -50px;
+        opacity: 1;
     }
     .concept-img img {
         width: 100%;
@@ -180,9 +201,11 @@ header {
     width: 100%;
     margin-top: 50px;
     padding-top: 150px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .service-container h1 {
     margin-left: 50px;
+    font-size: 25px;
 }
 .service-content {
     display: flex;
@@ -206,6 +229,7 @@ header {
     .service {
         width: 100%;
         margin-top: 50px;
+        padding-top: 0px;
     }
     .service-container h1 {
         margin-left: 20px;
@@ -216,18 +240,23 @@ header {
         margin-top: 30px;
     }
     .service-detail {
-        width: 100%;
+        width: 95%;
+        margin-top: 50px;
+        border-bottom: 1px solid rgb(114, 114, 114);
     }
     .service-name img {
         width: 100%;
-        opacity: 0.7;
+        opacity: 1;
+    }
+    .service-detail h3 {
+        margin-top: 10px;
+        font-weight: bold;
     }
     .service-name p {
-        background-color: white;
         position: relative;
-        top: -60px;
-        width: 80%;
-        float: left;
+        top: -10px;
+        width: 95%;
+    
     }
 }
 /* サービス　スマホ  */
@@ -238,6 +267,15 @@ header {
 }
 .seminars-container h1 {
     margin-left: 30px;
+}
+.seminars-container a{
+    text-decoration: none;
+    color: rgb(95, 94, 94);
+}
+.seminars-container a:hover {
+    color: black;
+    transition: all 0.8s;
+    text-decoration: underline black;
 }
 .seminars-content {
     display: flex;
@@ -252,7 +290,7 @@ header {
 }
 .seminars-img img {
     width: 100%;
-    opacity: 0.7;
+    opacity: 1;
 }
 /* セミナー */
 /* セミナー　スマホ */
@@ -263,6 +301,10 @@ header {
     .seminars-container h1 {
         margin-left: 0px;
         font-size: 30px;
+    }
+    .seminars-container a {
+        text-decoration: none;
+        color: black;
     }
     .seminars-content {
         display: block;
@@ -277,7 +319,7 @@ header {
     }
     .seminars-img img {
         width: 100%;
-        opacity: 0.7;
+        opacity: 1;
     }
 }
 /* セミナー　スマホ */
@@ -292,6 +334,15 @@ header {
 .contents-container h2 {
     display: none;
 }
+.contents-container a {
+    color: rgb(95, 94, 94);
+    text-decoration: none;
+    transition: 0.8s;
+}
+.contents-container a:hover {
+    color: black;
+    text-decoration: underline black;
+}
 .contents-content {
     display: flex;
     align-items: center;
@@ -301,11 +352,11 @@ header {
     margin-left: 30px;
 }
 .contents-img {
-    width: 100%;
+    width: 150%;
 }
 .contents-img img {
     width: 100%;
-    opacity: 0.7;
+    opacity: 1;
 }
 /* 学生支援 */
 /* 学生支援　スマホ */
@@ -321,6 +372,10 @@ header {
         font-size: 30px;
         display: block;
     }
+    .contents-container a {
+        color: black;
+        text-decoration: none;
+    }
     .contents-content {
         display: block;
         align-items: center;
@@ -334,7 +389,7 @@ header {
     }
     .contents-img img {
         width: 100%;
-        opacity: 0.7;
+        opacity: 1;
     }
 }
 /* 学生支援　スマホ */
@@ -345,6 +400,15 @@ header {
 }
 .offline-container {
     margin-top: 120px;
+}
+.offline-container a {
+    text-decoration: none;
+    color: rgb(95, 94, 94);
+    transition: all 0.8s;
+}
+.offline-container a:hover {
+    text-decoration: underline black;
+    color: black;
 }
 .offline-container h1 {
     margin-left: 30px;
@@ -358,7 +422,7 @@ header {
     margin-left: 30px;
 }
 .offline-img {
-    width: 100%;
+    width: 200%;
 }
 .offline-img img {
     width: 100%;
@@ -371,6 +435,10 @@ header {
     }
     .offline-container {
         margin-top: 80px;
+    }
+    .offline-container a {
+        color: black;
+        text-decoration: none;
     }
     .offline-container h1 {
         margin-left: 0px;
