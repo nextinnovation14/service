@@ -111,7 +111,7 @@ header {
         /* background-color: rgb(82, 42, 192); */
         width: 100%;
         line-height: 70px;
-        margin-right: 10px;
+        margin-right: 0px;
         font-size: 15px;
     }
     .hamburger-contact a {
@@ -299,8 +299,9 @@ header {
         margin-top: 120px;
     }
     .seminars-container h1 {
-        margin-left: 0px;
-        font-size: 30px;
+        margin-left: 10px;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
     }
     .seminars-container a {
         text-decoration: none;
@@ -369,7 +370,9 @@ header {
     }
     .contents-container h2 {
         margin-left: 0px;
-        font-size: 30px;
+        font-size: 25px;
+        padding-left: 10px;
+        font-family: 'Times New Roman', Times, serif;
         display: block;
     }
     .contents-container a {
@@ -422,7 +425,7 @@ header {
     margin-left: 30px;
 }
 .offline-img {
-    width: 200%;
+    width: 100%;
 }
 .offline-img img {
     width: 100%;
@@ -441,7 +444,9 @@ header {
         text-decoration: none;
     }
     .offline-container h1 {
-        margin-left: 0px;
+        margin-left: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
     }
     .offline-content {
         display: block;
@@ -499,12 +504,18 @@ header {
     }
     .news-container {
         margin-top: 100px;
+        margin-top: 0px;
         margin-left: 0px;
+    }
+    .news-container h1 {
+        font-size: 30px;
+        padding-left: 25px;
+        font-family: 'Times New Roman', Times, serif;
     }
     .news-contents {
         margin-top: 10px;
         border-top: solid 1px rgb(78, 78, 78);
-        margin: 0 10px;
+        margin: 0px;
     }
     .reports, .announcement {
         display: block;
@@ -512,7 +523,7 @@ header {
     }
     .reports-title, .announcement-title {
         margin-top: 30px;
-        margin-left: 30px;
+        padding-left: 30px;
         width: 100%;
         text-align: left;
     }
@@ -566,14 +577,19 @@ header {
     }
     .members-container {
         margin-top: 100px;
+        padding-top: 0px;
         margin-left: 0px;
     }
-    
+    .members-container h1 {
+        font-size: 25px;
+        padding-left: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
     .members-detail {
         display: block;
         align-items: center;
         justify-content: right;
-        margin: 50px 0px;
+        margin: 50px 10px;
     }
     .memebers-img {
         width: 0%;
