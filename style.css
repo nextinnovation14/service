@@ -3,13 +3,6 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-body {
-    overflow: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    background-color: rgb(210, 236, 247);
-}
-
 /* ヘッダー */
 header {
     min-height: 100vh;
@@ -28,6 +21,7 @@ header {
     justify-content: center;
     width: 100%;
     position: fixed;
+    z-index: 30;
 }
 .header-detail {
     float: left;
@@ -123,12 +117,17 @@ header {
     }
     .header-img {
         display: block;
+        position: relative;
+        overflow: hidden;
+        top: 80px;
     }
-    .header-img img{
-        margin-top: 70px;
+    .slide-imgs {
+        display: flex;
+    }
+    .slide-img {
         width: 100%;
-    }
 
+    }
 }
 /* ヘッダー　スマホ */
 
