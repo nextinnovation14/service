@@ -1,38 +1,20 @@
-'use strict';
-{
-    const humburgerMenu = document.getElementById('lines');
-    const line2 = document.getElementById('line2');
-    const sideMenu = document.getElementById('side-menu');
+const slide = document.querySelector('.slide-imgs');
+const slideImgs = document.querySelectorAll('.slide-imgs img');
 
-    // humburgerMenu.addEventListener('click', () => {
-    //     line2.classList.toggle('spin');
-    //     sideMenu.classList.toggle('slidein');
-    // });
+let counter = 1;
+const size = slideImgs[0].clientWidth;
 
-    // フェードイン
-    const fadeIn = document.getElementById('main-img');
-    fadeIn.animate([{ opacity: '0' }, { opacity: '0.1' }], 1200);
+slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-    const mainTitle = document.getElementById('main-title');
-    mainTitle.animate([{ opacity: '0' }, { opacity: '0.1' }], 1500);
-    // フェードイン
 
-    //ジャンプ
-    const homeBtn = document.getElementById('home-btn');
-    homeBtn.addEventListener('click', () => {
-        scrollTo(0, 0);
-    });
 
-    //矢印
-    const arrow = document.getElementById('arrow');
-    arrow.addEventListener('click', () => {
-        scrollTo(0, 0);
-    });
 
-    //コンタクト
-    const contact = document.getElementById('contact-place');
-    contact.addEventListener('click', () => {
-        scrollTo(0, 10000);
-    })
-
-}
+const conceptBtn = document.querySelector('.concept-btn');
+const conceptDetailShow = document.querySelector('.concept-detail-show');
+const conceptContent = document.querySelector('.concept-content');
+const serviceContainer = document.querySelector('.service-container');
+conceptBtn.addEventListener('click', function () {
+    conceptDetailShow.classList.toggle('appear');
+    conceptContent.classList.toggle('shadow');
+    serviceContainer.classList.toggle('shadow');
+})
