@@ -171,9 +171,10 @@ header {
     width: 100%;
 }
 .concept-detail-show {
+    display: none;
     position: relative;
-    top: -200px;
-    left:   -10000px;
+    top: 0px;
+    left: 0px;
     width: 70%;
     z-index: 15;
     background-color: rgb(228, 228, 228);
@@ -187,7 +188,7 @@ header {
     display: flex;
     text-align: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px 20px;
     padding: 10px;
     border-bottom: black 1px solid;
 }
@@ -195,6 +196,16 @@ header {
     font-size: 15px;
     width: 60%;
     text-align: left;
+}
+.x-btn {
+    border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+    left: 900px;
+    color: white;
+    background-color: black;
+    box-shadow: black 1px 1px;
+    opacity: 0.7;
 }
 .appear {
     left: 0px;
@@ -204,6 +215,10 @@ header {
     opacity: 0.2;
     transition: all 0.6s;
 }
+.disappear {
+    left: -10000px;;
+    transition: all 0.8s;
+}   
 
 /* コンセプト */
 /* コンセプト　スマホ */
@@ -248,33 +263,48 @@ header {
     }
     .concept-detail-show {
         position: relative;
-        top: -200px;
-        left:   -10000px;
+        top: -100px;
+        /* left: -10000px; */
         width: 90%;
         z-index: 15;
-        background-color: rgb(212, 212, 212);
+        background-color: rgb(226, 226, 226);
         padding: 5px 0;
+        margin-top: 70px;
     }
     .concept-detail-show h1 {
+        text-align: center;
         font-size: 25px;
         width: 100%;
     }
+    .concept-detail-show h3 {
+        text-align: center;
+    }
     .concept-detail-show h4 {
         width: 30%;
-        font-size: 15px;
+        font-size: 13px;
     }
     .concept-detail-show nav {
         display: flex;
         text-align: center;
         align-items: center;
-        margin: 10px;
-        padding: 10px;
+        margin: 5px;
+        padding: 5px;
         border-bottom: black 1px solid;
     }
     .concept-detail-show article {
-        font-size: 15px;
+        font-size: 12px;
         width: 65%;
         text-align: left;
+    }
+    .x-btn {
+        border-radius: 50%;
+        font-size: 20px;
+        position: relative;
+        left: 300px;
+        background-color: white;
+        color: black;
+        box-shadow: black 1px 1px;
+        opacity: 0.7;
     }
     .appear {
         left: 0px;
@@ -284,6 +314,10 @@ header {
         opacity: 0.2;
         transition: all 0.6s;
     }
+    .disappear {
+        left: -10000px;;
+        transition: all 0.8s;
+    }
 
 }
 /* コンセプト　スマホ */
@@ -291,8 +325,8 @@ header {
 /* サービス */
 .service {
     width: 100%;
-    margin-top: -750px;
-    padding-top: 150px;
+    margin-top: 0px;
+    padding-top: 100px;
     font-family: 'Times New Roman', Times, serif;
 }
 .service-container h1 {
@@ -320,7 +354,7 @@ header {
 @media (min-width:320px) and (max-width: 900px) {
     .service {
         width: 100%;
-        margin-top: -1200px;
+        margin-top: 100px;
         padding-top: 0px;
     }
     .service-container h1 {
