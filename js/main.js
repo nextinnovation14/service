@@ -139,3 +139,10 @@ prevBow.addEventListener('click', function () {
     current--;
     imageSlide[current].style.display = 'block'
 })
+
+const achivementSlide = document.querySelector('.slider');
+const seminarsAchivement = document.querySelector('.seminars-achivement');
+
+achivementSlide.addEventListener('click', function () {
+    seminarsAchivement.classList.toggle('achivement');
+})
