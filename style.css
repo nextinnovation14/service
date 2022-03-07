@@ -547,12 +547,35 @@ header {
         right: -170px;
         top: -300px;
     }
+    .seminars-achivement {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: 20px;
+        left: -10000px;
+        background-color: rgb(224, 224, 224);
+        padding: 30px 0;
+        opacity: 0.9;
+        transition: ease-in-out 0.6s;
+    }
+    .achivement {
+        left: -0px;
+    }
+    .seminars-achivement h1, p {
+        text-align: center;
+    }
+    .seminars-achivement h1 {
+        padding-bottom: 20px;
+    }
+    .seminars-achivement p {
+        line-height: 30px;
+    }
 }
 /* セミナー　スマホ */
 
 /* 学生支援 */
 .contents {
-    margin-top: 120px;
+    margin-top: -200px;
 }
 .contents-container h1, h2 {
     margin-left: 30px;
