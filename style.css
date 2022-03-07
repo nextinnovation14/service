@@ -64,6 +64,7 @@ header {
 .hamburger {
     display: none;
 }
+
 /* ヘッダー */
 /* ヘッダー　スマホ */
 @media (min-width:320px) and (max-width: 900px) {
@@ -448,6 +449,29 @@ header {
 .slide-img img {
     width: 100%;
     opacity: 1;
+}
+.seminars-achivement {
+    text-align: left;
+    width: 50%;
+    position: relative;
+    top: -400px;
+    left: -10000px;
+    background-color: rgb(224, 224, 224);
+    padding: 30px 0;
+    opacity: 0.9;
+    transition: ease-in-out 0.8s;
+}
+.achivement {
+    left: -350px;
+}
+.seminars-achivement h1, p {
+    text-align: center;
+}
+.seminars-achivement h1 {
+    padding-bottom: 20px;
+}
+.seminars-achivement p {
+    line-height: 30px;
 }
 /* セミナー */
 /* セミナー　スマホ */
